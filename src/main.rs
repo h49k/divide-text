@@ -24,8 +24,6 @@ fn main() {
         out_files.push(BufWriter::new(fs::File::create(file_name).unwrap()));
     }
 
-    
-
     for line in lines {
 
         write!(out_files[counter / LINE_BREAK], "{}\r\n", line ).unwrap();
